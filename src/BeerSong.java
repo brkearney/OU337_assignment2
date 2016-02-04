@@ -1,21 +1,28 @@
 public class BeerSong {
 
-    public void Ninety_Nine_Bottles_Of_Beer(int count)
+    public static void Ninety_Nine_Bottles_Of_Beer()
     {
-        if (count != 1)
+        for (int i=99; i>0; i--)
         {
-            System.out.println(count + "bottles of beer on the wall, " + count + " bottles of beer\nTake one down, pass it around, " + (count - 1) + " bottles of beer on the wall.");
-        }
-        else
-        {
-            System.out.println(count + "bottles of beer on the wall, " + count + " bottles of beer\nTake it down, pass it around, no more bottles of beer on the wall.");
+            if (i != 1)
+            {
+                if (i!= 2)
+                {
+                    System.out.println(i + " bottles of beer on the wall, " + i + " bottles of beer\nTake one down, pass it around, " + (i - 1) + " bottles of beer on the wall.\n");
+                }
+                else
+                {
+                    System.out.println(i + " bottles of beer on the wall, " + i + " bottles of beer\nTake one down, pass it around, " + (i - 1) + " bottle of beer on the wall.\n");
+                }
+            }
+            else
+            {
+                System.out.println(i + " bottle of beer on the wall, " + i + " bottle of beer\nTake it down, pass it around, no more bottles of beer on the wall.");
+            }
         }
     }
 
     public static void main(String[] args){
-        for (int i=99; i>0; i--)
-        {
-            Ninety_Nine_Bottles_Of_Beer(i);
-        }
+        Ninety_Nine_Bottles_Of_Beer();
     }
 }
