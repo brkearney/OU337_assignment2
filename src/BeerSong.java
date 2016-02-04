@@ -12,7 +12,10 @@ public class BeerSong {
         }
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args){
+        for (int i=99; i>0; i--)
+        {
+            Ninety_Nine_Bottles_Of_Beer(i);
+        }
     }
 }
